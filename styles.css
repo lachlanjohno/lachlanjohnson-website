@@ -180,6 +180,7 @@ nav {
   color: white;
 }
 .anchor-item {
+  color: white;
   transition: 0.2s;
 }
 .anchor-item:active {
