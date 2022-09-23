@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/script.js" defer></script>
+  <style>
+    .get-started {
+      color: green;
+    }
+
+    .web-dev--cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 55px;
+    }
+
+    .branding {
+      margin: 0;
+    }
+
+    .green {
+      padding-top: 1rem;
+    }
+
+    .card {
+      display: flex;
+      box-sizing: border-box;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 1.5rem;
+      padding-bottom: 1rem;
+      width: 25rem;
+    }
+
+    main {
+      padding-bottom: 6rem;
+      border-bottom: 1px solid #26292B;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    p {
+      line-height: 1.75;
+      margin-bottom: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        max-width: 80%;
+      }
+
+      .green {
+        padding-top: 0rem;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="navbar container">
+        <div class="nav-flex">
+          <div class="menu-icon">
+            <input class="menu-icon__cheeckbox" type="checkbox" />
+            <div>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+  
+          <span class="header-name"> <a href="/index.html">Lachlan Johnson</a></span>
+          
+        </div>
+        <div class="nav-links">
+          <a class="nav-links-anchor" href="#contact"><button class="nav-link-contact">Contact</button></a>
+        </div>
+      </div>
+      <menu class="overlay">
+        <ul class="overlay-ul">
+          <li class="overlay-listitem"> <a class="anchor-item" href="/coming-soon.html">Web Development</a> </li>
+          <li class="overlay-listitem"> <a class="anchor-item"  href="/coming-soon.html">SaaS</a> </li>
+          <li class="overlay-listitem"> <a class="anchor-item"  href="/coming-soon.html"></a> </li>
+        </ul>
+      </menu>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="large-font hero-text">Web Development</h1>
+    <p class="hero-p">Website for every business</p>
+    
+    <div class="web-dev--cards">
+      <div class="card">
+        <h2 class="branding">Branding</h2>
+        <p>Need updated branding? No problem, we can create high quality custom designs for you.</p>
+
+        <a style="color: #17C964" class="get-started green" href="#contact">Get started</a>
+      </div>
+
+      <div class="card">
+        <h2 class="branding">Design</h2>
+        <p>Our unique and clean designs are a great way to show your customers you are serious about what you do.</p>
+
+        <a style="color: #F5A524" class="get-started" href="#contact">Get started</a>
+      </div>
+
+      <div class="card">
+        <h2 class="branding">Hosting</h2>
+        <p>New to hosting? No problem, we can host your website for you, and provide on-going support and updates.</p>
+
+        <a style="color: #0072F5" class="get-started" href="#contact">Get started</a>
+      </div>
+    </div>
+  </main>
+
+  <section id="contact" class="cta container">
+    <h1 class="cta-header large-font">Contact us today</h1>
+
+    <form action="https://getform.io/f/d6334047-0075-4484-a3ac-f2ec2c60a82d" method="post">
+      <div class="input-field-names">
+        <div class="contact">
+          <label name="firstName" class="cta-label" for="First Name">First Name</label>
+          <input class="input-contact" type="text">
+        </div>
+  
+        <div class="contact">
+          <label class="cta-label" for="Last Name">Last Name</label>
+          <input name="lastName" class="input-contact" type="text">
+        </div>
+      </div>
+  
+      <div class="input-field-contact">
+        <div class="contact">
+          <label class="cta-label" for="Mobile">Mobule Number</label>
+          <input name="number" class="input-contact" type="text">
+        </div>
+  
+        <div class="contact">
+          <label class="cta-label" for="Email">Email Address</label>
+          <input name="email" class="input-contact" type="text">
+        </div>
+      </div>
+  
+      <div class="text-area">
+        <label class="cta-label" for="message">Message</label>
+        <textarea name="message" class="message" name="" id="" cols="30" rows="10"></textarea>
+      </div>
+  
+      <button class="submit-btn">SUBMIT</button>
+
+    </section> 
+     
+  <footer>
+    <div class="footer-container">
+      <span href="/index.html">lachlanjohnson.com | All Rights Reserved</span>
+    </div>
+  </footer>
+
+
+</body>
+</html>
